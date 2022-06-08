@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            {% block menu %} {% include 'menu.html' %} {% endblock menu %}
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <form action="/createUser/" method="post">
+                <section>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" placeholder="Enter your First Name">
+                </section>
+                <section>
+                    <label for="firstName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="Enter your Last Name">
+                </section>
+                <section>
+                    <label for="firstName">Email</label>
+                    <input type="text" name="email" placeholder="Enter your Email">
+                </section>
+                <button>Add User</button>
+            </form>
+        
+            <form action="/login/" method="post">
+           
+                <section>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Enter your Email">
+                </section>
+                <button>Login</button>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+</body>
+</html>

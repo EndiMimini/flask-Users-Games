@@ -1,0 +1,33 @@
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-center{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+.text-center a{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+.text-end{
+    text-align: end;
+}
+.d-flex{
+    display: flex;
+}
+.flex-end{
+    align-content: flex-end;
+    height: fit-content;
+}
+
+.form{
+    background-color: gray;
+    padding: 20px 100px;
+
+}
